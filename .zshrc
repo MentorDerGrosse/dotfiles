@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-neofetch --ascii_distro arch 
+neofetch --ascii_distro blackarch 
 figlet "Arch, keep it simple" |lolcat
 alias pbcopy="xclip -sel clip"
 
@@ -154,4 +154,6 @@ alias push='git push origin'
 alias pull='git pull origin'
 alias st='git status'
 alias tag='git tag'
+alias add='git add'
+alias adda='git add .'
 
