@@ -126,8 +126,9 @@ alias ..='cd ..'
 alias la='ls -lah'
 alias al='la'
 alias lal='ls -la'
-alias sps='sudo pacman -S'
-alias s='sudo'
+alias install='sudo pacman -S'
+alias spy='sudo pacman -Syu'
+
 
 mc () {
   mkdir "$1"
