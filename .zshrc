@@ -158,3 +158,5 @@ alias tag='git tag'
 alias add='git add'
 alias adda='git add .'
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -84,6 +84,10 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+#Alias shortcuts
+alias vi=vim
+alias ..='cd ..'
+
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
@@ -119,9 +123,10 @@ fi
 neofetch --ascii_distro blackarch
 figlet  "Arch, keep it simple" | lolcat
 
-alias vi=vim
 
 mc () {
 	mkdir "$1"
 	cd "$1"
 }
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
