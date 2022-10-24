@@ -144,5 +144,3 @@ mc () {
 }
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-cd ../../mnt/c/Users/Megaport
