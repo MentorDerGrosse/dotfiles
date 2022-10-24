@@ -92,9 +92,22 @@ alias ..='cd ..'
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
+alias ls = 'ls-aFh --color=always'
 alias ll='ls -alF'
-alias la='ls -A'
+alias la='ls -Alh'
 alias l='ls -CF'
+alias lk='ls -lSrh' #Sort by size
+alias lc='ls -lcrh' #Sort by change time
+alias lt='ls -ltrh' #Sort by date
+alias lsa='ls -lap' #Sort by alphabeth
+
+# Searches for text in all files in the current folder
+ftext()
+{
+    grep -iIHrn --color=always "$1" . | less -r
+}
+
+
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -124,9 +137,12 @@ neofetch --ascii_distro blackarch
 figlet  "Arch, keep it simple" | lolcat
 
 
+#Mkdir and go in it 
 mc () {
 	mkdir "$1"
 	cd "$1"
 }
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+cd ../../mnt/c/Users/Megaport
