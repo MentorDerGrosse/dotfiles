@@ -18,8 +18,21 @@ set showmode
 set showmatch
 set hlsearch
 set history=1000
+set so=7
+set wildmenu
+set cmdheight=1
+set lazyredraw
+set magic
+set nowb
+set noswapfile
+set lbr
+set tw=500
+set smarttab
+set expandtab
 
 syntax enable
 
 colorscheme peachpuff
 highlight Comment ctermfg=green
+
+
